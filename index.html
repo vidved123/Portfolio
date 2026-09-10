@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vidhyut Iyer</title>
-  <meta name="description" content="Vidhyut Iyer — cybersecurity + AI engineer in Bangalore. Currently building at iKites Technologies." />
+  <title>Vidhyut Iyer — Cybersecurity Professional & AI Innovation Engineer</title>
+  <meta name="description" content="Portfolio of Vidhyut Iyer — CEH-certified cybersecurity professional and AI Innovation Engineer at iKites Technologies, working across healthcare AI, voice agents, and drug discovery." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
   <script>
     (function() {
@@ -17,18 +17,25 @@
   </script>
 </head>
 <body>
-  <div class="bg-glow" aria-hidden="true"></div>
+  <div class="bg-orbs" aria-hidden="true">
+    <span class="orb orb-1"></span>
+    <span class="orb orb-2"></span>
+    <span class="orb orb-3"></span>
+  </div>
 
   <header class="site-header">
     <nav class="nav container">
-      <a href="#top" class="brand">Vidhyut Iyer</a>
+      <a href="#top" class="brand">
+        <span class="brand-mark">VI</span>
+        <span class="brand-name">Vidhyut Iyer</span>
+      </a>
       <div class="nav-right">
         <button class="theme-toggle" aria-label="Toggle theme">
-          <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+          <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <circle cx="12" cy="12" r="4"/>
             <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
           </svg>
-          <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+          <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
           </svg>
         </button>
@@ -37,11 +44,11 @@
         </button>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#work">Work</a></li>
+          <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#stack">Stack</a></li>
+          <li><a href="#skills">Skills</a></li>
           <li><a href="#education">Education</a></li>
-          <li><a href="mailto:vidhyut2000@gmail.com">Email</a></li>
+          <li><a href="#contact" class="nav-cta">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -50,77 +57,129 @@
   <main id="top">
     <!-- HERO -->
     <section class="hero">
-      <div class="container">
-        <p class="hero-hi">Hey — I'm</p>
-        <h1 class="hero-name">Vidhyut Iyer.</h1>
-        <p class="hero-role">
-          Cybersecurity professional turned <span class="accent">AI engineer</span>.
-          Currently at <a href="https://ikites.ai" target="_blank" rel="noopener">iKites</a>,
-          in Bangalore.
-        </p>
-        <p class="hero-body">
-          I have a BCA in cybersecurity and a CEH V11, and for the last couple of
-          years I've been building applied AI — serverless LLM stacks on Bedrock,
-          RAG apps with Knowledge Bases and Agents, and full-stack products across
-          healthcare, voice, and drug discovery.
-        </p>
-        <div class="hero-ctas">
-          <a href="#projects" class="btn btn-primary">See what I've built</a>
-          <a href="mailto:vidhyut2000@gmail.com" class="btn btn-link">vidhyut2000@gmail.com</a>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="status-pill">
+            <span class="status-dot"></span>
+            Available for interesting AI + security work
+          </p>
+          <h1>
+            Cybersecurity Professional
+            <span class="accent">
+              <span class="accent-text">& AI Innovation Engineer</span>
+            </span>
+          </h1>
+          <p class="lede">
+            I blend security fundamentals with modern AI engineering — building
+            serverless LLM architectures, RAG applications, and full-stack products
+            across healthcare, voice agents, and drug discovery.
+          </p>
+          <div class="hero-ctas">
+            <a href="#projects" class="btn btn-primary">
+              View my work
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#contact" class="btn btn-ghost">Get in touch</a>
+          </div>
+          <ul class="hero-meta">
+            <li><span>📍</span> Bangalore, India</li>
+            <li><span>🎓</span> CEH V11 · 115/125</li>
+            <li><span>💼</span> iKites Technologies</li>
+          </ul>
         </div>
+        <aside class="hero-card" aria-hidden="true">
+          <div class="hero-card-header">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="hero-card-title">whoami.sh</span>
+          </div>
+          <pre class="hero-card-body"><span class="c">$</span> whoami
+<span class="s">vidhyut</span>
+<span class="c">$</span> cat role.txt
+<span class="s">AI Innovation Engineer @ iKites</span>
+<span class="c">$</span> ls stack/
+<span class="s">aws-bedrock  rag  llm  react  python</span>
+<span class="c">$</span> echo $mission
+<span class="s">"Ship secure, useful AI."</span>
+<span class="c">$</span> <span class="cursor">_</span></pre>
+        </aside>
       </div>
+      <a href="#about" class="scroll-cue" aria-label="Scroll to content">
+        <span></span>
+      </a>
     </section>
 
     <!-- ABOUT -->
     <section id="about" class="section reveal">
       <div class="container">
-        <h2>About</h2>
-        <div class="prose">
+        <p class="section-eyebrow"><span class="eyebrow-glyph">✦</span> 01 — About</p>
+        <h2 class="section-title">A cybersecurity foundation, <span class="gradient-text">built forward into AI.</span></h2>
+        <div class="about-grid">
           <p>
-            I fell into cybersecurity in college — did the CEH, wrote a lot of
-            network and crypto code, spent time on the fundamentals. Somewhere
-            along the way I started building AI things on the side and it stuck.
+            I'm a cybersecurity professional with a BCA in Cybersecurity from Jain
+            University and a CEH V11 certification. Over the last two years I've moved
+            deep into applied AI engineering — designing serverless LLM architectures
+            on AWS Bedrock, shipping RAG apps with Knowledge Bases and Agents, and
+            building full-stack products end to end.
           </p>
           <p>
-            Since March 2026 I've been at
+            Today I'm an AI Innovation Engineer at
             <a href="https://ikites.ai" target="_blank" rel="noopener">iKites Technologies</a>,
-            first as an intern and now as an AI Innovation Engineer. The company works
-            across five verticals (healthcare, ophthalmology, automotive, manufacturing,
-            education), and my time gets split across healthcare AI, a voice agent for a
-            clinic, some drug-discovery tooling, and internal compliance work.
+            working across five verticals — healthcare, ophthalmology, automotive,
+            manufacturing, and education. My work spans healthcare AI, voice agents,
+            drug discovery, and compliance tooling.
           </p>
-          <p>
-            Outside of work I keep chipping away at side projects. The library apps
-            in the projects section were my first real full-stack builds; the
-            SageMaker Canvas piece was me learning how far you can get without
-            writing model code.
-          </p>
+        </div>
+        <div class="stat-strip">
+          <div class="stat">
+            <div class="stat-num">5+</div>
+            <div class="stat-label">Verticals</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">2 yrs</div>
+            <div class="stat-label">Applied AI</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">4</div>
+            <div class="stat-label">Certifications</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">115</div>
+            <div class="stat-label">CEH V11 score</div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- WORK -->
-    <section id="work" class="section reveal">
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section section-alt reveal">
       <div class="container">
-        <h2>Work</h2>
+        <p class="section-eyebrow"><span class="eyebrow-glyph">◆</span> 02 — Experience</p>
+        <h2 class="section-title">Where I've <span class="gradient-text">worked.</span></h2>
         <ol class="timeline">
           <li class="timeline-item">
-            <div class="timeline-marker"></div>
+            <div class="timeline-marker current" aria-hidden="true"></div>
             <div class="timeline-body">
               <div class="timeline-head">
                 <h3>AI Innovation Engineer</h3>
-                <span class="timeline-date">Jun 2026 — now</span>
+                <span class="timeline-date">Jun 2026 — Present</span>
               </div>
               <p class="timeline-org">iKites Technologies · Bangalore</p>
               <p>
-                Promoted from the intern role. Ship serverless LLM stacks and
-                RAG products from prototype to pilot. Split time between healthcare
-                AI, a clinic voice agent, and some drug-discovery tooling.
+                Promoted from intern. AI/ML work across healthcare and enterprise —
+                voice AI, drug discovery, compliance. Ship serverless LLM stacks and
+                RAG products from prototype to pilot.
               </p>
+              <div class="tag-row">
+                <span class="tag">AWS Bedrock</span>
+                <span class="tag">Voice AI</span>
+                <span class="tag">Drug discovery</span>
+              </div>
             </div>
           </li>
           <li class="timeline-item">
-            <div class="timeline-marker"></div>
+            <div class="timeline-marker" aria-hidden="true"></div>
             <div class="timeline-body">
               <div class="timeline-head">
                 <h3>AI Intern</h3>
@@ -134,7 +193,7 @@
             </div>
           </li>
           <li class="timeline-item">
-            <div class="timeline-marker"></div>
+            <div class="timeline-marker" aria-hidden="true"></div>
             <div class="timeline-body">
               <div class="timeline-head">
                 <h3>Software Intern</h3>
@@ -142,8 +201,8 @@
               </div>
               <p class="timeline-org">Prathisthan Software</p>
               <p>
-                Shipped the two library projects listed below — one full-stack
-                e-commerce build, one Python management system.
+                Shipped the two library projects listed below — a full-stack
+                e-commerce platform and a Python management system.
               </p>
             </div>
           </li>
@@ -154,95 +213,115 @@
     <!-- PROJECTS -->
     <section id="projects" class="section reveal">
       <div class="container">
-        <h2>Projects</h2>
-        <p class="section-lede">
-          A mix of client work and things I built to learn. Code links go to my
-          personal GitHub.
-        </p>
-        <div class="project-list">
-          <article class="project">
-            <h3>Serverless AI on AWS Bedrock</h3>
+        <p class="section-eyebrow"><span class="eyebrow-glyph">▲</span> 03 — Projects</p>
+        <h2 class="section-title">Selected <span class="gradient-text">work.</span></h2>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-num">01</div>
+            <div class="project-tag">Serverless AI · AWS</div>
+            <h3>Serverless AI & AWS Bedrock Developer</h3>
             <p>
-              End-to-end serverless LLM architectures on Bedrock — RAG apps
-              built with Knowledge Bases and Agents, IAM-secured, following
-              AWS Well-Architected principles.
+              End-to-end serverless LLM architectures on Bedrock. RAG apps built with
+              Knowledge Bases and Agents, secured with IAM and designed against AWS
+              Well-Architected principles.
             </p>
-            <ul class="stack">
+            <ul class="project-stack">
               <li>AWS Bedrock</li><li>RAG</li><li>IAM</li><li>Lambda</li>
             </ul>
             <div class="project-actions">
-              <a href="https://github.com/vidved123" target="_blank" rel="noopener">GitHub →</a>
-              <span class="note">No live demo — Bedrock costs money.</span>
+              <a class="btn btn-small" href="https://github.com/vidved123" target="_blank" rel="noopener">
+                View Code
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M8 7h9v9"/></svg>
+              </a>
             </div>
+            <span class="project-note">No live demo — AWS cost</span>
           </article>
 
-          <article class="project">
+          <article class="project-card">
+            <div class="project-num">02</div>
+            <div class="project-tag">No-Code ML · SageMaker Canvas</div>
             <h3>No-Code Business Predictor</h3>
             <p>
-              An AutoML churn model for a mobile app, built on SageMaker Canvas
-              without writing any ML code. Dataset prep, training, evaluation,
-              validation — all in the Canvas UI.
+              A no-code AutoML model predicting mobile app churn built on SageMaker
+              Canvas — dataset prep, training, evaluation, and validation without
+              writing a single line of ML code.
             </p>
-            <ul class="stack">
-              <li>SageMaker Canvas</li><li>AutoML</li><li>Churn prediction</li>
+            <ul class="project-stack">
+              <li>SageMaker Canvas</li><li>AutoML</li><li>Churn Prediction</li>
             </ul>
             <div class="project-actions">
-              <a href="assets/NoCode_Business_Predictor.pptx" download>Presentation ↓</a>
-              <a href="assets/SageMaker_Canvas_Guide.docx" download>Full guide ↓</a>
+              <a class="btn btn-small" href="assets/NoCode_Business_Predictor.pptx" download>
+                View Presentation
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v13M6 11l6 6 6-6M4 21h16"/></svg>
+              </a>
+              <a class="btn btn-small btn-ghost-small" href="assets/SageMaker_Canvas_Guide.docx" download>Download Guide</a>
             </div>
+            <span class="project-note">No live demo — credit/cost limits</span>
           </article>
 
-          <article class="project">
+          <article class="project-card">
+            <div class="project-num">03</div>
+            <div class="project-tag">Full-stack · Java + React</div>
             <h3>Library E-commerce Platform</h3>
             <p>
-              Full-stack e-commerce for a library — browsing, ordering,
-              inventory. Java on the backend, React on the frontend. Built
-              Feb–Jun 2025.
+              Full-stack e-commerce for a library — browsing, ordering, and inventory
+              management. Java backend, React frontend, built Feb–Jun 2025.
             </p>
-            <ul class="stack">
+            <ul class="project-stack">
               <li>Java</li><li>React</li><li>REST</li>
             </ul>
             <div class="project-actions">
-              <a href="https://github.com/vidved123" target="_blank" rel="noopener">GitHub →</a>
-              <a href="#" data-placeholder="live-demo" target="_blank" rel="noopener">Live demo →</a>
+              <a class="btn btn-small" href="https://github.com/vidved123" target="_blank" rel="noopener">
+                View Code
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M8 7h9v9"/></svg>
+              </a>
+              <a class="btn btn-small btn-ghost-small" href="#" data-placeholder="live-demo" target="_blank" rel="noopener">Live Demo</a>
             </div>
           </article>
 
-          <article class="project">
+          <article class="project-card">
+            <div class="project-num">04</div>
+            <div class="project-tag">Python · Web</div>
             <h3>Library Web Management System</h3>
             <p>
-              Catalogue management and book tracking in Python + HTML. My first
-              proper backend build, shipped Jul 2024 – Jan 2025.
+              Catalogue management and book tracking system built in Python and HTML.
+              Shipped Jul 2024 – Jan 2025.
             </p>
-            <ul class="stack">
+            <ul class="project-stack">
               <li>Python</li><li>HTML</li><li>SQLite</li>
             </ul>
             <div class="project-actions">
-              <a href="https://github.com/vidved123" target="_blank" rel="noopener">GitHub →</a>
-              <span class="note">Local app — screenshots on request.</span>
+              <a class="btn btn-small" href="https://github.com/vidved123" target="_blank" rel="noopener">
+                View Code
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M8 7h9v9"/></svg>
+              </a>
             </div>
+            <span class="project-note">Local app — screenshots on request</span>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- STACK -->
-    <section id="stack" class="section reveal">
+    <!-- SKILLS -->
+    <section id="skills" class="section section-alt reveal">
       <div class="container">
-        <h2>Stack</h2>
-        <p class="section-lede">Roughly grouped. I'm most fluent on the AI + cloud side; still growing on frontend polish.</p>
-        <div class="stack-cols">
-          <div>
-            <h4>Security</h4>
+        <p class="section-eyebrow"><span class="eyebrow-glyph">✧</span> 04 — Skills</p>
+        <h2 class="section-title">What I <span class="gradient-text">work with.</span></h2>
+        <div class="skills-grid">
+          <div class="skill-group">
+            <div class="skill-icon">🛡️</div>
+            <h3>Security</h3>
             <ul>
-              <li>Network security</li>
-              <li>Ethical hacking</li>
+              <li>Network Security</li>
+              <li>Ethical Hacking</li>
               <li>Cryptography</li>
               <li>SSL / TLS</li>
             </ul>
           </div>
-          <div>
-            <h4>AI &amp; cloud</h4>
+          <div class="skill-group">
+            <div class="skill-icon">🤖</div>
+            <h3>AI & Cloud</h3>
             <ul>
               <li>AWS Bedrock</li>
               <li>RAG / LLM</li>
@@ -250,8 +329,9 @@
               <li>Agents</li>
             </ul>
           </div>
-          <div>
-            <h4>Languages</h4>
+          <div class="skill-group">
+            <div class="skill-icon">💻</div>
+            <h3>Languages</h3>
             <ul>
               <li>Python</li>
               <li>Java</li>
@@ -259,8 +339,9 @@
               <li>JavaScript / TypeScript</li>
             </ul>
           </div>
-          <div>
-            <h4>Frontend</h4>
+          <div class="skill-group">
+            <div class="skill-icon">⚛️</div>
+            <h3>Frontend</h3>
             <ul>
               <li>React</li>
               <li>Next.js</li>
@@ -272,53 +353,79 @@
       </div>
     </section>
 
-    <!-- EDUCATION -->
+    <!-- EDUCATION & CERTS -->
     <section id="education" class="section reveal">
       <div class="container">
-        <h2>Education &amp; certs</h2>
+        <p class="section-eyebrow"><span class="eyebrow-glyph">◈</span> 05 — Education & Certifications</p>
+        <h2 class="section-title"><span class="gradient-text">Credentials.</span></h2>
         <div class="edu-grid">
-          <div>
-            <h4>BCA, Cybersecurity</h4>
-            <p class="edu-meta">Jain University, Bangalore · 2020–2026 · CGPA 6.06</p>
+          <div class="edu-col">
+            <h3>Education</h3>
+            <div class="edu-item">
+              <h4>BCA in Cybersecurity</h4>
+              <p class="edu-org">Jain University, Bangalore</p>
+              <p class="edu-meta">2020 — 2026 · CGPA 6.06</p>
+            </div>
+            <div class="edu-item">
+              <h4>12th Grade</h4>
+              <p class="edu-org">Deeksha Jnana Sweekar PU College</p>
+              <p class="edu-meta">2016 — 2018 · 71%</p>
+            </div>
           </div>
-          <div>
-            <h4>12th grade</h4>
-            <p class="edu-meta">Deeksha Jnana Sweekar PU College · 2016–2018 · 71%</p>
-          </div>
-          <div>
-            <h4>CEH V11</h4>
-            <p class="edu-meta">EC-Council · 2022 · 115 / 125</p>
-          </div>
-          <div>
-            <h4>React Complete Guide (Next.js &amp; Redux)</h4>
-            <p class="edu-meta">Udemy · 2025</p>
-          </div>
-          <div>
-            <h4>CISSP Cert Prep</h4>
-            <p class="edu-meta">LinkedIn Learning</p>
-          </div>
-          <div>
-            <h4>Cryptography &amp; SSL/TLS</h4>
-            <p class="edu-meta">Training</p>
+          <div class="edu-col">
+            <h3>Certifications</h3>
+            <ul class="cert-list">
+              <li>
+                <strong>CEH V11</strong>
+                <span>EC-Council · 2022 · Score 115 / 125</span>
+              </li>
+              <li>
+                <strong>React Complete Guide</strong>
+                <span>Udemy · 2025 · Next.js & Redux</span>
+              </li>
+              <li>
+                <strong>CISSP Cert Prep</strong>
+                <span>LinkedIn Learning</span>
+              </li>
+              <li>
+                <strong>Cryptography & SSL/TLS</strong>
+                <span>Training</span>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="section reveal">
-      <div class="container">
-        <h2>Get in touch</h2>
-        <p class="contact-body">
-          The fastest way to reach me is email. Happy to chat about AI engineering,
-          security, or interesting side projects.
+    <section id="contact" class="section section-contact reveal">
+      <div class="container contact-inner">
+        <p class="section-eyebrow"><span class="eyebrow-glyph">✉</span> 06 — Contact</p>
+        <h2 class="section-title">Let's <span class="gradient-text">build something.</span></h2>
+        <p class="contact-lede">
+          Open to conversations about AI engineering, security, and interesting
+          product work. The fastest way to reach me is email.
         </p>
-        <ul class="contact-list">
-          <li><span>Email</span> <a href="mailto:vidhyut2000@gmail.com">vidhyut2000@gmail.com</a></li>
-          <li><span>Phone</span> <a href="tel:+918105628374">+91 8105628374</a></li>
-          <li><span>GitHub</span> <a href="https://github.com/vidved123" target="_blank" rel="noopener">github.com/vidved123</a></li>
-          <li><span>LinkedIn</span> <a href="https://linkedin.com/in/vidhyut-iyer-7479b460" target="_blank" rel="noopener">linkedin.com/in/vidhyut-iyer</a></li>
-          <li><span>Location</span> Bangalore, India</li>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="mailto:vidhyut2000@gmail.com">
+            vidhyut2000@gmail.com
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <a class="btn btn-ghost" href="tel:+918105628374">+91 8105628374</a>
+        </div>
+        <ul class="social-links">
+          <li>
+            <a href="https://github.com/vidved123" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.35.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.08-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.21-1.49 3.18-1.18 3.18-1.18.62 1.58.23 2.75.11 3.04.74.8 1.19 1.82 1.19 3.08 0 4.41-2.69 5.39-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.55A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+              GitHub
+            </a>
+          </li>
+          <li>
+            <a href="https://linkedin.com/in/vidhyut-iyer-7479b460" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.13 1.44-2.13 2.94v5.66H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zm1.78 13.02H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .78 0 1.73v20.53C0 23.22.79 24 1.77 24h20.45C23.2 24 24 23.22 24 22.27V1.73C24 .78 23.2 0 22.22 0z"/></svg>
+              LinkedIn
+            </a>
+          </li>
         </ul>
       </div>
     </section>
