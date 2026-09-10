@@ -3,121 +3,119 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vidhyut Iyer — Cybersecurity Professional & AI Innovation Engineer</title>
-  <meta name="description" content="Portfolio of Vidhyut Iyer — CEH-certified cybersecurity professional and AI Innovation Engineer at iKites Technologies, working across healthcare AI, voice agents, and drug discovery." />
+  <title>Vidhyut Iyer</title>
+  <meta name="description" content="Vidhyut Iyer — cybersecurity + AI engineer in Bangalore. Currently building at iKites Technologies." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <script>
+    (function() {
+      const t = localStorage.getItem('theme');
+      if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
+    })();
+  </script>
 </head>
 <body>
+  <div class="bg-glow" aria-hidden="true"></div>
+
   <header class="site-header">
     <nav class="nav container">
-      <a href="#top" class="brand">
-        <span class="brand-mark">VI</span>
-        <span class="brand-name">Vidhyut Iyer</span>
-      </a>
-      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#contact" class="nav-cta">Contact</a></li>
-      </ul>
+      <a href="#top" class="brand">Vidhyut Iyer</a>
+      <div class="nav-right">
+        <button class="theme-toggle" aria-label="Toggle theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#stack">Stack</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="mailto:vidhyut2000@gmail.com">Email</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
 
   <main id="top">
     <!-- HERO -->
     <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">Bangalore, India</p>
-          <h1>
-            Cybersecurity Professional
-            <span class="accent">& AI Innovation Engineer</span>
-          </h1>
-          <p class="lede">
-            I blend security fundamentals with modern AI engineering — building
-            serverless LLM architectures, RAG applications, and full-stack products
-            across healthcare, voice agents, and drug discovery.
-          </p>
-          <div class="hero-ctas">
-            <a href="#projects" class="btn btn-primary">View my work</a>
-            <a href="#contact" class="btn btn-ghost">Get in touch</a>
-          </div>
-          <ul class="hero-meta">
-            <li><span>Certified</span> CEH V11 · 115/125</li>
-            <li><span>Currently</span> iKites Technologies</li>
-            <li><span>Focus</span> Healthcare AI · Voice · RAG</li>
-          </ul>
+      <div class="container">
+        <p class="hero-hi">Hey — I'm</p>
+        <h1 class="hero-name">Vidhyut Iyer.</h1>
+        <p class="hero-role">
+          Cybersecurity professional turned <span class="accent">AI engineer</span>.
+          Currently at <a href="https://ikites.ai" target="_blank" rel="noopener">iKites</a>,
+          in Bangalore.
+        </p>
+        <p class="hero-body">
+          I have a BCA in cybersecurity and a CEH V11, and for the last couple of
+          years I've been building applied AI — serverless LLM stacks on Bedrock,
+          RAG apps with Knowledge Bases and Agents, and full-stack products across
+          healthcare, voice, and drug discovery.
+        </p>
+        <div class="hero-ctas">
+          <a href="#projects" class="btn btn-primary">See what I've built</a>
+          <a href="mailto:vidhyut2000@gmail.com" class="btn btn-link">vidhyut2000@gmail.com</a>
         </div>
-        <aside class="hero-card" aria-hidden="true">
-          <div class="hero-card-header">
-            <span class="dot red"></span>
-            <span class="dot yellow"></span>
-            <span class="dot green"></span>
-            <span class="hero-card-title">whoami.sh</span>
-          </div>
-          <pre class="hero-card-body"><span class="c">$</span> whoami
-<span class="s">vidhyut</span>
-<span class="c">$</span> cat role.txt
-<span class="s">AI Innovation Engineer @ iKites</span>
-<span class="c">$</span> ls stack/
-<span class="s">aws-bedrock  rag  llm  react  python</span>
-<span class="c">$</span> echo $mission
-<span class="s">"Ship secure, useful AI."</span>
-<span class="c">$</span> <span class="cursor">_</span></pre>
-        </aside>
       </div>
     </section>
 
     <!-- ABOUT -->
-    <section id="about" class="section">
+    <section id="about" class="section reveal">
       <div class="container">
-        <p class="section-eyebrow">01 — About</p>
-        <h2 class="section-title">A cybersecurity foundation, built forward into AI.</h2>
-        <div class="about-grid">
+        <h2>About</h2>
+        <div class="prose">
           <p>
-            I'm a cybersecurity professional with a BCA in Cybersecurity from Jain
-            University and a CEH V11 certification. Over the last two years I've moved
-            deep into applied AI engineering — designing serverless LLM architectures
-            on AWS Bedrock, shipping RAG apps with Knowledge Bases and Agents, and
-            building full-stack products end to end.
+            I fell into cybersecurity in college — did the CEH, wrote a lot of
+            network and crypto code, spent time on the fundamentals. Somewhere
+            along the way I started building AI things on the side and it stuck.
           </p>
           <p>
-            Today I'm an AI Innovation Engineer at
+            Since March 2026 I've been at
             <a href="https://ikites.ai" target="_blank" rel="noopener">iKites Technologies</a>,
-            working across five verticals — healthcare, ophthalmology, automotive,
-            manufacturing, and education. My work spans healthcare AI, voice agents,
-            drug discovery, and compliance tooling.
+            first as an intern and now as an AI Innovation Engineer. The company works
+            across five verticals (healthcare, ophthalmology, automotive, manufacturing,
+            education), and my time gets split across healthcare AI, a voice agent for a
+            clinic, some drug-discovery tooling, and internal compliance work.
+          </p>
+          <p>
+            Outside of work I keep chipping away at side projects. The library apps
+            in the projects section were my first real full-stack builds; the
+            SageMaker Canvas piece was me learning how far you can get without
+            writing model code.
           </p>
         </div>
       </div>
     </section>
 
-    <!-- EXPERIENCE -->
-    <section id="experience" class="section section-alt">
+    <!-- WORK -->
+    <section id="work" class="section reveal">
       <div class="container">
-        <p class="section-eyebrow">02 — Experience</p>
-        <h2 class="section-title">Where I've worked.</h2>
+        <h2>Work</h2>
         <ol class="timeline">
           <li class="timeline-item">
             <div class="timeline-marker"></div>
             <div class="timeline-body">
               <div class="timeline-head">
                 <h3>AI Innovation Engineer</h3>
-                <span class="timeline-date">Jun 2026 — Present</span>
+                <span class="timeline-date">Jun 2026 — now</span>
               </div>
               <p class="timeline-org">iKites Technologies · Bangalore</p>
               <p>
-                Promoted from intern. AI/ML work across healthcare and enterprise —
-                voice AI, drug discovery, compliance. Ship serverless LLM stacks and
-                RAG products from prototype to pilot.
+                Promoted from the intern role. Ship serverless LLM stacks and
+                RAG products from prototype to pilot. Split time between healthcare
+                AI, a clinic voice agent, and some drug-discovery tooling.
               </p>
             </div>
           </li>
@@ -144,8 +142,8 @@
               </div>
               <p class="timeline-org">Prathisthan Software</p>
               <p>
-                Shipped the two library projects listed below — a full-stack
-                e-commerce platform and a Python management system.
+                Shipped the two library projects listed below — one full-stack
+                e-commerce build, one Python management system.
               </p>
             </div>
           </li>
@@ -154,103 +152,97 @@
     </section>
 
     <!-- PROJECTS -->
-    <section id="projects" class="section">
+    <section id="projects" class="section reveal">
       <div class="container">
-        <p class="section-eyebrow">03 — Projects</p>
-        <h2 class="section-title">Selected work.</h2>
-
-        <div class="project-grid">
-          <!-- Project 1 -->
-          <article class="project-card">
-            <div class="project-tag">Serverless AI · AWS</div>
-            <h3>Serverless AI & AWS Bedrock Developer</h3>
+        <h2>Projects</h2>
+        <p class="section-lede">
+          A mix of client work and things I built to learn. Code links go to my
+          personal GitHub.
+        </p>
+        <div class="project-list">
+          <article class="project">
+            <h3>Serverless AI on AWS Bedrock</h3>
             <p>
-              End-to-end serverless LLM architectures on Bedrock. RAG apps built with
-              Knowledge Bases and Agents, secured with IAM and designed against AWS
-              Well-Architected principles.
+              End-to-end serverless LLM architectures on Bedrock — RAG apps
+              built with Knowledge Bases and Agents, IAM-secured, following
+              AWS Well-Architected principles.
             </p>
-            <ul class="project-stack">
+            <ul class="stack">
               <li>AWS Bedrock</li><li>RAG</li><li>IAM</li><li>Lambda</li>
             </ul>
             <div class="project-actions">
-              <a class="btn btn-small" href="https://github.com/vidved123" target="_blank" rel="noopener">View Code on GitHub</a>
-              <span class="project-note">No live demo — AWS cost</span>
+              <a href="https://github.com/vidved123" target="_blank" rel="noopener">GitHub →</a>
+              <span class="note">No live demo — Bedrock costs money.</span>
             </div>
           </article>
 
-          <!-- Project 2 -->
-          <article class="project-card">
-            <div class="project-tag">No-Code ML · SageMaker Canvas</div>
+          <article class="project">
             <h3>No-Code Business Predictor</h3>
             <p>
-              A no-code AutoML model predicting mobile app churn built on SageMaker
-              Canvas — dataset prep, training, evaluation, and validation without
-              writing a single line of ML code.
+              An AutoML churn model for a mobile app, built on SageMaker Canvas
+              without writing any ML code. Dataset prep, training, evaluation,
+              validation — all in the Canvas UI.
             </p>
-            <ul class="project-stack">
-              <li>SageMaker Canvas</li><li>AutoML</li><li>Churn Prediction</li>
+            <ul class="stack">
+              <li>SageMaker Canvas</li><li>AutoML</li><li>Churn prediction</li>
             </ul>
             <div class="project-actions">
-              <a class="btn btn-small" href="assets/NoCode_Business_Predictor.pptx" download>View Presentation</a>
-              <a class="btn btn-small btn-ghost-small" href="assets/SageMaker_Canvas_Guide.docx" download>Download Guide</a>
+              <a href="assets/NoCode_Business_Predictor.pptx" download>Presentation ↓</a>
+              <a href="assets/SageMaker_Canvas_Guide.docx" download>Full guide ↓</a>
             </div>
-            <span class="project-note">No live demo — credit/cost limits</span>
           </article>
 
-          <!-- Project 3 -->
-          <article class="project-card">
-            <div class="project-tag">Full-stack · Java + React</div>
+          <article class="project">
             <h3>Library E-commerce Platform</h3>
             <p>
-              Full-stack e-commerce for a library — browsing, ordering, and inventory
-              management. Java backend, React frontend, built Feb–Jun 2025.
+              Full-stack e-commerce for a library — browsing, ordering,
+              inventory. Java on the backend, React on the frontend. Built
+              Feb–Jun 2025.
             </p>
-            <ul class="project-stack">
+            <ul class="stack">
               <li>Java</li><li>React</li><li>REST</li>
             </ul>
             <div class="project-actions">
-              <a class="btn btn-small" href="https://github.com/vidved123" target="_blank" rel="noopener">View Code on GitHub</a>
-              <a class="btn btn-small btn-ghost-small" href="#" data-placeholder="live-demo" target="_blank" rel="noopener">Live Demo</a>
+              <a href="https://github.com/vidved123" target="_blank" rel="noopener">GitHub →</a>
+              <a href="#" data-placeholder="live-demo" target="_blank" rel="noopener">Live demo →</a>
             </div>
           </article>
 
-          <!-- Project 4 -->
-          <article class="project-card">
-            <div class="project-tag">Python · Web</div>
+          <article class="project">
             <h3>Library Web Management System</h3>
             <p>
-              Catalogue management and book tracking system built in Python and HTML.
-              Shipped Jul 2024 – Jan 2025.
+              Catalogue management and book tracking in Python + HTML. My first
+              proper backend build, shipped Jul 2024 – Jan 2025.
             </p>
-            <ul class="project-stack">
+            <ul class="stack">
               <li>Python</li><li>HTML</li><li>SQLite</li>
             </ul>
             <div class="project-actions">
-              <a class="btn btn-small" href="https://github.com/vidved123" target="_blank" rel="noopener">View Code on GitHub</a>
-              <span class="project-note">Local app — screenshots on request</span>
+              <a href="https://github.com/vidved123" target="_blank" rel="noopener">GitHub →</a>
+              <span class="note">Local app — screenshots on request.</span>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- SKILLS -->
-    <section id="skills" class="section section-alt">
+    <!-- STACK -->
+    <section id="stack" class="section reveal">
       <div class="container">
-        <p class="section-eyebrow">04 — Skills</p>
-        <h2 class="section-title">What I work with.</h2>
-        <div class="skills-grid">
-          <div class="skill-group">
-            <h3>Security</h3>
+        <h2>Stack</h2>
+        <p class="section-lede">Roughly grouped. I'm most fluent on the AI + cloud side; still growing on frontend polish.</p>
+        <div class="stack-cols">
+          <div>
+            <h4>Security</h4>
             <ul>
-              <li>Network Security</li>
-              <li>Ethical Hacking</li>
+              <li>Network security</li>
+              <li>Ethical hacking</li>
               <li>Cryptography</li>
               <li>SSL / TLS</li>
             </ul>
           </div>
-          <div class="skill-group">
-            <h3>AI & Cloud</h3>
+          <div>
+            <h4>AI &amp; cloud</h4>
             <ul>
               <li>AWS Bedrock</li>
               <li>RAG / LLM</li>
@@ -258,8 +250,8 @@
               <li>Agents</li>
             </ul>
           </div>
-          <div class="skill-group">
-            <h3>Languages</h3>
+          <div>
+            <h4>Languages</h4>
             <ul>
               <li>Python</li>
               <li>Java</li>
@@ -267,8 +259,8 @@
               <li>JavaScript / TypeScript</li>
             </ul>
           </div>
-          <div class="skill-group">
-            <h3>Frontend</h3>
+          <div>
+            <h4>Frontend</h4>
             <ul>
               <li>React</li>
               <li>Next.js</li>
@@ -280,68 +272,53 @@
       </div>
     </section>
 
-    <!-- EDUCATION & CERTS -->
-    <section id="education" class="section">
+    <!-- EDUCATION -->
+    <section id="education" class="section reveal">
       <div class="container">
-        <p class="section-eyebrow">05 — Education & Certifications</p>
-        <h2 class="section-title">Credentials.</h2>
+        <h2>Education &amp; certs</h2>
         <div class="edu-grid">
-          <div class="edu-col">
-            <h3>Education</h3>
-            <div class="edu-item">
-              <h4>BCA in Cybersecurity</h4>
-              <p class="edu-org">Jain University, Bangalore</p>
-              <p class="edu-meta">2020 — 2026 · CGPA 6.06</p>
-            </div>
-            <div class="edu-item">
-              <h4>12th Grade</h4>
-              <p class="edu-org">Deeksha Jnana Sweekar PU College</p>
-              <p class="edu-meta">2016 — 2018 · 71%</p>
-            </div>
+          <div>
+            <h4>BCA, Cybersecurity</h4>
+            <p class="edu-meta">Jain University, Bangalore · 2020–2026 · CGPA 6.06</p>
           </div>
-          <div class="edu-col">
-            <h3>Certifications</h3>
-            <ul class="cert-list">
-              <li>
-                <strong>CEH V11</strong> — EC-Council (2022)
-                <span>Score: 115 / 125</span>
-              </li>
-              <li>
-                <strong>React Complete Guide</strong> — Udemy (2025)
-                <span>Next.js & Redux</span>
-              </li>
-              <li>
-                <strong>CISSP Cert Prep</strong> — LinkedIn Learning
-              </li>
-              <li>
-                <strong>Cryptography & SSL/TLS</strong> — Training
-              </li>
-            </ul>
+          <div>
+            <h4>12th grade</h4>
+            <p class="edu-meta">Deeksha Jnana Sweekar PU College · 2016–2018 · 71%</p>
+          </div>
+          <div>
+            <h4>CEH V11</h4>
+            <p class="edu-meta">EC-Council · 2022 · 115 / 125</p>
+          </div>
+          <div>
+            <h4>React Complete Guide (Next.js &amp; Redux)</h4>
+            <p class="edu-meta">Udemy · 2025</p>
+          </div>
+          <div>
+            <h4>CISSP Cert Prep</h4>
+            <p class="edu-meta">LinkedIn Learning</p>
+          </div>
+          <div>
+            <h4>Cryptography &amp; SSL/TLS</h4>
+            <p class="edu-meta">Training</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="section section-contact">
-      <div class="container contact-inner">
-        <p class="section-eyebrow">06 — Contact</p>
-        <h2 class="section-title">Let's build something.</h2>
-        <p class="contact-lede">
-          Open to conversations about AI engineering, security, and interesting
-          product work. The fastest way to reach me is email.
+    <section id="contact" class="section reveal">
+      <div class="container">
+        <h2>Get in touch</h2>
+        <p class="contact-body">
+          The fastest way to reach me is email. Happy to chat about AI engineering,
+          security, or interesting side projects.
         </p>
-        <div class="contact-actions">
-          <a class="btn btn-primary" href="mailto:vidhyut2000@gmail.com">vidhyut2000@gmail.com</a>
-          <a class="btn btn-ghost" href="tel:+918105628374">+91 8105628374</a>
-        </div>
-        <ul class="social-links">
-          <li>
-            <a href="https://github.com/vidved123" target="_blank" rel="noopener">GitHub</a>
-          </li>
-          <li>
-            <a href="https://linkedin.com/in/vidhyut-iyer-7479b460" target="_blank" rel="noopener">LinkedIn</a>
-          </li>
+        <ul class="contact-list">
+          <li><span>Email</span> <a href="mailto:vidhyut2000@gmail.com">vidhyut2000@gmail.com</a></li>
+          <li><span>Phone</span> <a href="tel:+918105628374">+91 8105628374</a></li>
+          <li><span>GitHub</span> <a href="https://github.com/vidved123" target="_blank" rel="noopener">github.com/vidved123</a></li>
+          <li><span>LinkedIn</span> <a href="https://linkedin.com/in/vidhyut-iyer-7479b460" target="_blank" rel="noopener">linkedin.com/in/vidhyut-iyer</a></li>
+          <li><span>Location</span> Bangalore, India</li>
         </ul>
       </div>
     </section>
@@ -349,7 +326,7 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>© <span id="year"></span> Vidhyut Iyer · Built with plain HTML & CSS</p>
+      <p>© <span id="year"></span> Vidhyut Iyer</p>
       <a href="#top" class="back-to-top">Back to top ↑</a>
     </div>
   </footer>
