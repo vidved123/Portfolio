@@ -609,40 +609,6 @@ a:hover { text-decoration: underline; }
 .about-grid p { margin: 0; }
 @media (max-width: 780px) { .about-grid { grid-template-columns: 1fr; } }
 
-.stat-strip {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
-  margin-top: 48px;
-  padding: 24px;
-  background: var(--bg-elev);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow-sm);
-}
-.stat { text-align: center; }
-.stat-num {
-  font-family: 'Space Grotesk', sans-serif;
-  font-size: 28px;
-  font-weight: 700;
-  background: var(--accent-grad);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  letter-spacing: -0.02em;
-}
-.stat-label {
-  font-size: 12.5px;
-  color: var(--fg-soft);
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  font-weight: 600;
-  margin-top: 4px;
-}
-@media (max-width: 620px) {
-  .stat-strip { grid-template-columns: repeat(2, 1fr); }
-}
-
 /* ============================================================
    Timeline
    ============================================================ */
